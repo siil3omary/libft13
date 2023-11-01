@@ -6,11 +6,12 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 14:05:31 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/01 13:41:26 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/01 14:40:59 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 int	isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))

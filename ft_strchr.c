@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/01 18:17:42 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/03 16:16:48 by aelomari         ###   ########.fr       */
+/*   Created: 2023/11/03 16:37:06 by aelomari          #+#    #+#             */
+/*   Updated: 2023/11/03 17:01:12 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+char	*ft_strchr(const char *s, int c)
 {
-	while (n > 0)
+	while (*s)
 	{
-		ft_memset(s, 0, n);
+		if (*s == c)
+		{
+			return ((char *)s);
+		}
+		s++;
 	}
+	return (NULL);
 }

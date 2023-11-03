@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/01 18:17:42 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/03 16:16:48 by aelomari         ###   ########.fr       */
+/*   Created: 2023/11/02 15:35:22 by aelomari          #+#    #+#             */
+/*   Updated: 2023/11/02 15:37:13 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+int	ft_tolower(int c)
 {
-	while (n > 0)
+	if (c >= 'A' && c <= 'Z')
 	{
-		ft_memset(s, 0, n);
+		return (c + 32);
 	}
+	else
+		return (c);
 }

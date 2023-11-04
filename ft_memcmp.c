@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/03 17:28:58 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/04 13:59:56 by aelomari         ###   ########.fr       */
+/*   Created: 2023/11/04 13:55:03 by aelomari          #+#    #+#             */
+/*   Updated: 2023/11/04 14:10:38 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
+	unsigned char *str1 = (unsigned char *)s1;
+	unsigned char *str2 = (unsigned char *)s2;
+
 	while (n--)
 	{
-		if (*s1 != *s2)
+		if (*str1 != *str2)
 		{
-			return (*s1 - *s2);
+			return (*str1 - *str2);
 		}
-		if (*s1 == '\0' || *s2 == '\0')
+		if (*str1 == '\0' || *str2 == '\0')
 		{
 			return (0);
 		}
-		s1++;
-		s2++;
+		str1++;
+		str2++;
 	}
 	return (0);
 }

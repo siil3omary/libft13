@@ -6,16 +6,13 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 18:17:42 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/03 16:16:48 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/04 13:45:08 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	while (n > 0)
-	{
-		ft_memset(s, 0, n);
-	}
+	ft_memset(s, 0, n);
 }

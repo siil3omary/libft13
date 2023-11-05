@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
+/*   By: siil3omary <siil3omary@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 16:37:06 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/03 17:01:12 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/05 20:22:33 by siil3omary       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,18 @@
 
 char	*ft_strchr(const char *s, int c)
 {
+
 	while (*s)
 	{
-		if (*s == c)
+		if (*s == (unsigned char)c)
 		{
-			return ((char *)s);
+			return (( char *)s);
 		}
 		s++;
 	}
+	
+	if (c == '\0') {
+        return (char *)s;
+    }
 	return (NULL);
 }

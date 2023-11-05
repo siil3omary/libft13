@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
+/*   By: siil3omary <siil3omary@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 17:28:58 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/04 13:59:56 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/05 21:58:59 by siil3omary       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,20 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
+	unsigned char	*str;
+	unsigned char 	*ptr;
+
+	str = (unsigned char *)s1;
+	ptr = (unsigned char *)s2; 
+	
 	while (n--)
 	{
-		if (*s1 != *s2)
-		{
-			return (*s1 - *s2);
-		}
-		if (*s1 == '\0' || *s2 == '\0')
-		{
+		if (*str != *ptr)
+			return (*str - *ptr);
+		if (*str == '\0' || *ptr == '\0')
 			return (0);
-		}
-		s1++;
-		s2++;
+		str++;
+		ptr++;
 	}
 	return (0);
 }

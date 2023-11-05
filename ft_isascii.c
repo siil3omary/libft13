@@ -6,13 +6,13 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 12:49:42 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/01 14:40:55 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/04 14:28:09 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	isascii(int c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }

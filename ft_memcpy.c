@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 18:41:17 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/01 18:52:17 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/04 15:57:51 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,15 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*d;
 	unsigned char	*s;
-
+	 size_t	i;
+	 i = 0;
 	s = (unsigned char *)src;
 	d = (unsigned char *)dest;
-	while (n > 0)
+	while (i < n)
 	{
-		*d = *s;
-		d++;
-		s++;
-		n--;
+	d[i] = s[i];
+	i++;
 	}
-	*d = '\n';
+	
 	return (d);
 }

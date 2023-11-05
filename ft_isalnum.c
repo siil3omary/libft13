@@ -6,13 +6,13 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 12:33:19 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/01 14:41:03 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/04 14:28:01 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	isalnum(int c)
+int	ft_isalnum(int c)
 {
 	if (((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) || (c >= '0'
 			&& c <= '9'))

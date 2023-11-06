@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 15:35:22 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/02 15:37:13 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/06 18:06:54 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ int	ft_tolower(int c)
 		return (c + 32);
 	}
 	else
-		return (c);
+		return (c); 
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: siil3omary <siil3omary@student.42.fr>      +#+  +:+       +#+        */
+/*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 15:02:25 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/05 17:54:31 by siil3omary       ###   ########.fr       */
+/*   Updated: 2023/11/06 18:00:21 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 size_t src_len;
-size_t dst_len;
+size_t dst_len;	
 size_t i;
 
 src_len = ft_strlen(src);

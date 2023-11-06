@@ -6,7 +6,31 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 18:15:19 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/06 18:15:20 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/07 00:37:54 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+char *ft_strnstr(const char *big, const char *little, size_t len)
+{
+    if (ft_strlen(little) == 0)
+        return (char *)big;
+
+    size_t i = 0;
+    size_t j;
+
+    while (big[i] && i < len)
+    {
+        j = 0;
+        while (i + j < len &&big[i + j] == little[j] && little[j] && big[i + j])
+        {
+            j++;
+        }
+        if (ft_strlen(little) == j)
+            return ((char *)&big[i]);
+        i++;
+    }
+
+    return (NULL);
+}

@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 20:36:26 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/06 22:40:09 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/07 00:47:14 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 int     ft_strcmp(const char *s1, const char *s2);
 char *ft_strnstr(const char *big, const char *little, size_t len);
-int     ft_atoi(const char *str);
+int ft_atoi(const char *nptr);
 int     ft_isalpha(int c);
 int     ft_isdigit(int c);
 int     ft_isalnum(int c);

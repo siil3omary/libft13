@@ -24,9 +24,10 @@ char	*ft_strrchr(const char *s, int c)
 			last = (char *)s;
 		}
 		s++;
-	} 
-	if (c == *s) {
-        last = (char *)s;
-    }
+	}
+	if (c == *s)
+	{
+		last = (char *)s;
+	}
 	return (last);
 }

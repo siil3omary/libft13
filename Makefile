@@ -21,6 +21,7 @@ SRCS = ft_bzero.c \
     ft_atoi.c \
     ft_calloc.c \
     ft_strdup.c \
+    ft_substr.c \
 
 # Uncomment and update the following line if you want to add bonus functions
 # BONUS = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c

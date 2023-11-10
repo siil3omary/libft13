@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 12:33:19 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/04 14:28:01 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/08 23:31:18 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ int	ft_isalnum(int c)
 	{
 		return (1);
 	}
-	return (1);
+	return (0);
 }

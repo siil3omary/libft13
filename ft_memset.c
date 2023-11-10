@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 14:49:14 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/07 01:39:48 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/09 02:02:50 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,14 @@ void	*ft_memset(void *s, int c, size_t n)
 		n--;
 	}
 	return (s);
+}
+
+imt main()
+{
+	int a = 651651;
+	ft_memset(&a , 0, 4);
+	ft_memset(&a, 10, 1);
+
+
+	printf("%d", a);
 }

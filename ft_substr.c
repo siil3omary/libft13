@@ -6,19 +6,20 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:23:46 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/08 02:34:47 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/09 01:54:01 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 #include <stdio.h>
 #include <string.h>
+#include<stdlib.h>
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
     if (!s)
         return NULL;
 
-    size_t str_len = ft_strlen(s);
+    size_t str_len = strlen(s);
 
     if (start >= str_len || len == 0)
         return ft_strdup("");
@@ -30,7 +31,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     if (!ptr)
         return NULL;
 
-    size_t i = 0;
+    int i = 0;
     while (i < len && s[start + i])
     {
         ptr[i] = s[start + i];
@@ -39,4 +40,11 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     ptr[i] = '\0';
 
     return ptr;
+}
+#include <stdio.h>
+int main()
+{
+	char *s ;
+	s = "RMWWW9";
+	printf("%c", ft_substr(s , 3, 3));
 }

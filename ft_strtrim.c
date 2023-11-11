@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 04:25:44 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/11 15:18:52 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/11 15:30:47 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ ft_strlcpy(str ,&s1[start],end - start);
 		return (str);
 	
 }
-int main(){
-	char s[] = "-*-*-*-*-*f*u*c*k*f*-*-*-*-*-*-";
-	char *trimmed = ft_strtrim(s , "-");
-	printf("|%s|" ,trimmed );
+// int main(){
+// 	char s[] = "******fuck******";
+// 	char *trimmed = ft_strtrim(s , "*");
+// 	printf("|%s|" ,trimmed );
 
-}
+// }

@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 20:36:26 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/11 04:30:53 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/11 15:27:10 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 
 #include <stddef.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 char	*ft_strdup(const char *s);

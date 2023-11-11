@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 20:36:26 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/09 01:07:59 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/11 04:30:53 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 
-
+char	*ft_strdup(const char *s);
 void    ft_bzero(void *s, size_t n);
 void    *ft_memcpy(void *dst, const void *src, size_t n);
 void    *ft_memccpy(void *dst, const void *src, int c, size_t n);
@@ -26,7 +26,6 @@ void    *ft_memchr(const void *s, int c, size_t n);
 void		*ft_memset(void *s, int c, size_t n);
 int     ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t  ft_strlen(const char *s);
-char    *ft_strdup(const char *s1);
 char    *ft_strcpy(char *dst, const char *src);
 char    *ft_strncpy(char *dst, const char *src, size_t n);
 char    *ft_strcat(char *s1, const char *s2);
@@ -59,10 +58,9 @@ char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int     ft_strequ(char const *s1, char const *s2);
 int     ft_strnequ(char const *s1, char const *s2, size_t n);
 char    * ft_strsub(char const *s, unsigned int start, size_t len);
-char *ft_strjoin(char const *s1, char const *s2)
+char *ft_strjoin(char const *s1, char const *s2);
 char *ft_strtrim(char const *s1, char const *set);
 char    **ft_split(char const *s, char c);
-char	*ft_strdup(const char *s);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 
 

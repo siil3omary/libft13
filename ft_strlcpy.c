@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 14:17:53 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/09 00:48:18 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/11 04:37:38 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,4 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		i++;
 	}
 	return (i);
-}
-int main()
-{
-	char dst[10] = "asdfg";
-	char src[10] = "qw";
-	
 }

@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 20:17:00 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/09 01:20:29 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/11 04:31:50 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ char *ft_strjoin(char const *s1, char const *s2)
 {
 	if(!s1 || !s2){
 				if(s1)
-			return ft_strdub(s1);
+			return ft_strdup(s1);
 		else
 		 if (s2)
-			return ft_strdub(s2);
+			return ft_strdup(s2);
 		else
 			return (NULL);
 	}

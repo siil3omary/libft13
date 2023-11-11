@@ -12,5 +12,9 @@ char *ft_strtrim(char const *s1, char const *set){
 		start++;
 	while (ft_strchr(set, s1[end]) && end >= 0)
 		end--;
+
+	str = malloc(end - start+ 1 );
+
+		return (ft_strlcpy(str ,s1[start],end - start));
 	
 }

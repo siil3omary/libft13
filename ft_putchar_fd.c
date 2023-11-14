@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 22:02:53 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/14 22:30:46 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/14 22:38:11 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,4 @@ void ft_putchar_fd(char c, int fd)
 // 	int fd = open("t.txt" , O_RDWR);
 // 	ft_putchar_fd('0', fd);
 // 	return 0;
-// }
+// } 

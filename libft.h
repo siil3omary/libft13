@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 20:36:26 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/14 20:17:57 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/14 22:19:59 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 char	*ft_strdup(const char *s);
 void    ft_bzero(void *s, size_t n);
@@ -64,6 +65,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_itoa(int n);
 void ft_striteri(char *s, void (*f)(unsigned int, char*));
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void ft_putchar_fd(char c, int fd);
 
 
 

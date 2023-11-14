@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 20:36:26 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/14 16:44:07 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/14 20:17:57 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ char    *ft_strnew(size_t size);
 void    ft_strdel(char **as);
 void    ft_strclr(char *s);
 void    ft_striter(char *s, void (*f)(char *));
-void    ft_striteri(char *s, void (*f)(unsigned int, char *));
 char    *ft_strmap(char const *s, char (*f)(char));
 int     ft_strequ(char const *s1, char const *s2);
 int     ft_strnequ(char const *s1, char const *s2, size_t n);
@@ -63,7 +62,7 @@ char *ft_strtrim(char const *s1, char const *set);
 char    **ft_split(char const *s, char c);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_itoa(int n);
-
+void ft_striteri(char *s, void (*f)(unsigned int, char*));
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 

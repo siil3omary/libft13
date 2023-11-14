@@ -18,7 +18,7 @@ static size_t len_int(long long n){
 	if(n < 0){
 		i++;
 		n  = -n;
-	}
+	} 
 	while (n > 0)
 	{
 		 n /= 10;

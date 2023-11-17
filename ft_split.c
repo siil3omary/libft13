@@ -6,12 +6,11 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 15:51:30 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/12 20:29:24 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/16 14:07:54 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 static size_t	word_count(const char *str, char c)
 {
@@ -22,12 +21,13 @@ static size_t	word_count(const char *str, char c)
 	i = 0;
 	while (str[i])
 	{
-		if ((str[i] != c )&& ((str[i + 1] == c) || str[i + 1] == '\0'))
+		if ((str[i] != c)  					&& ((str[i + 1] == c) || str[i + 1] == '\0'))
 			count++;
 		i++;
 	}
 	return (count);
 }
+
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;

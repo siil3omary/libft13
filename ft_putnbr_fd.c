@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 22:57:37 by codespace         #+#    #+#             */
-/*   Updated: 2023/11/14 22:59:59 by codespace        ###   ########.fr       */
+/*   Updated: 2023/11/16 13:36:55 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int nb, int fd)
 {
-	unsigned int	nbr;
+	unsigned int nbr;
 
 	if (nb < 0)
 	{
@@ -26,4 +26,4 @@ void	ft_putnbr_fd(int nb, int fd)
 	if (nbr >= 10)
 		ft_putnbr_fd(nbr / 10, fd);
 	ft_putchar_fd((char)(nbr % 10 + 48), fd);
-}
+} 

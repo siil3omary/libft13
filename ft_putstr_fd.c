@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 23:01:32 by codespace         #+#    #+#             */
-/*   Updated: 2023/11/14 23:01:33 by codespace        ###   ########.fr       */
+/*   Updated: 2023/11/16 13:37:01 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,4 @@ void	ft_putstr_fd(char *s, int fd)
 			i++;
 		}
 	}
-}
+} 

@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h" 
- 
-void ft_putchar_fd(char c, int fd)
+#include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
@@ -21,5 +21,5 @@ void ft_putchar_fd(char c, int fd)
 // int main(){
 // 	int fd = open("t.txt" , O_RDWR);
 // 	ft_putchar_fd('0', fd);
-// 	return 0;
-// } 
+// 	return (0);
+// }

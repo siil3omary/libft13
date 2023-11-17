@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 20:36:26 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/14 23:04:21 by codespace        ###   ########.fr       */
+/*   Updated: 2023/11/17 15:43:27 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+
+typedef struct s_list
+{
+    void *content;
+    struct s_list *next;
+} t_list;
 
 char	*ft_strdup(const char *s);
 void    ft_bzero(void *s, size_t n);
@@ -69,10 +75,16 @@ void ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int nb, int fd);
 void	ft_putstr_fd(char *s, int fd);
-
+t_list *ft_lstnew(void *content);
+void ft_lstadd_front(t_list **lst, t_list *new);
+int ft_lstsize(t_list *lst);
+t_list *ft_lstlast(t_list *lst);
+void ft_lstadd_back(t_list **lst, t_list *new);
+void ft_lstdelone(t_list *lst, void (*del)(void*));
 
 #define FT_MIN(a, b) ((a) <= (b) ? (a) : (b))
 #define FT_MAX(a, b) ((a) >= (b) ? (a) : (b))
+
 
 typedef unsigned char   t_uchar;
 #endif

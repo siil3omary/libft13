@@ -13,9 +13,10 @@
 #include "libft.h"
 #include "stdio.h"
 
-char *iffu( size_t start, size_t end)
+char	*iffu(size_t start, size_t end)
 {
-	char *nostr;
+	char	*nostr;
+
 	if (start >= end)
 	{
 		nostr = malloc(1);
@@ -35,14 +36,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*nostr;
 	char	*str;
 
-
 	start = 0;
 	end = ft_strlen(s1);
-		nostr = iffu(start, end);
-    if (nostr != NULL)
-    {
-        return nostr;
-    }
+	nostr = iffu(start, end);
+	if (nostr != NULL)
+	{
+		return (nostr);
+	}
 	while (ft_strchr(set, s1[start]) && start <= end)
 		start++;
 	while (ft_strchr(set, s1[end - 1]) && end > start)
@@ -55,4 +55,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(str, s1 + start, end - start + 1);
 	return (str);
 }
-

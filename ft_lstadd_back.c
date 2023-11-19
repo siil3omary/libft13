@@ -12,23 +12,21 @@
 
 #include "libft.h"
 
-#include "libft.h"
-
-void ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-    if (lst == NULL || new == NULL)
-        return;
+	t_list	*temp;
 
-    if (*lst == NULL)
-        *lst = new;
-    else
-    {
-        t_list *temp = *lst;
-        while (temp->next != NULL)
-            temp = temp->next;
-        
-        temp->next = new;
-    }
+	if (lst == NULL || new == NULL)
+		return ;
+	if (*lst == NULL)
+		*lst = new;
+	else
+	{
+		temp = *lst;
+		while (temp->next != NULL)
+			temp = temp->next;
+		temp->next = new;
+	}
 }
 
 // int main(){
@@ -47,7 +45,7 @@ void ft_lstadd_back(t_list **lst, t_list *new)
 
 // t_list *node4;
 // node4 = NULL;
-// node4 = (t_list *)malloc(sizeof(t_list));	
+// node4 = (t_list *)malloc(sizeof(t_list));
 
 // node1->next = node2;
 // node2->next = node3;
@@ -65,6 +63,5 @@ void ft_lstadd_back(t_list **lst, t_list *new)
 // 	printf("%s \n", (char *)node1->content);
 // 	node1 = node1->next;
 // }
-
 
 // }

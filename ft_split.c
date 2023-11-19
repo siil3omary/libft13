@@ -21,7 +21,7 @@ static size_t	word_count(const char *str, char c)
 	i = 0;
 	while (str[i])
 	{
-		if ((str[i] != c)  					&& ((str[i + 1] == c) || str[i + 1] == '\0'))
+		if ((str[i] != c) && ((str[i + 1] == c) || str[i + 1] == '\0'))
 			count++;
 		i++;
 	}

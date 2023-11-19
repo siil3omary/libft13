@@ -12,15 +12,15 @@
 
 #include "libft.h"
 
-void ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if(lst && new)
+	if (lst && new)
 	{
 		new->next = *lst;
 		*lst = new;
 	}
 	else
-	return ;
+		return ;
 }
 
 // int main (){
@@ -38,7 +38,6 @@ void ft_lstadd_front(t_list **lst, t_list *new)
 
 // node4 = (t_list *)malloc(sizeof(t_list));
 
-
 // node1->content =ft_strdup("node1");
 // node2->content =ft_strdup("node2");
 // node3->content =ft_strdup("node3");
@@ -54,7 +53,6 @@ void ft_lstadd_front(t_list **lst, t_list *new)
 // 	printf("%s \n",(char *)node4->content);
 // 	node4= node4->next;
 // }
-
 
 // printf("OK");
 

@@ -12,17 +12,17 @@
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
-	int count;
+	int	count;
+
 	count = 0;
-	
 	while (lst)
 	{
 		count++;
-		lst = lst->next; 
+		lst = lst->next;
 	}
-	return count;
+	return (count);
 }
 
 // int main()
@@ -37,7 +37,7 @@ int ft_lstsize(t_list *lst)
 // 	t_list *node8 = NULL;
 // 	t_list *node9 = NULL;
 // 	t_list *node10 = NULL;
-	
+
 // 	node1 = (t_list *)malloc(sizeof(t_list));
 // 	node2 = (t_list *)malloc(sizeof(t_list));
 // 	node3 = (t_list *)malloc(sizeof(t_list));
@@ -48,21 +48,19 @@ int ft_lstsize(t_list *lst)
 // 	node8 = (t_list *)malloc(sizeof(t_list));
 // 	node9 = (t_list *)malloc(sizeof(t_list));
 // 	node10 = (t_list *)malloc(sizeof(t_list));
-	
-	
+
 // 	node1->next = node2;
 // 	node1->content = ft_strdup("hello");
-	
+
 // 	node2->next = node3;
 // 	node2->content = ft_strdup("hello");
-		
-	
+
 // 	node3->next = node4;
 // 	node3->content = ft_strdup("hello");
-		
+
 // 	node4->next = node5;
 // 	node4->content = ft_strdup("hello");
-	
+
 // 	node5->next = node6;
 // 	node6->next = node7;
 // 	node7->next = node8;

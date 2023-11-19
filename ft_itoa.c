@@ -29,6 +29,7 @@ static size_t	len_int(long long n)
 	}
 	return (i);
 }
+
 static char	*zero(void)
 {
 	char	*zr;

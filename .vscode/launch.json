@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/user/Documents/libft13",
-      "program": "/Users/user/Documents/libft13/build/Debug/outDebug"
+      "cwd": "/Users/user/Desktop/libft13",
+      "program": "/Users/user/Desktop/libft13/build/Debug/outDebug"
     }
   ]
 }

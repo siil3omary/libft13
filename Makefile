@@ -31,8 +31,8 @@ SRCS = ft_atoi.c \
 				ft_strtrim.c \
 				ft_substr.c \
 				ft_tolower.c \
-				ft_toupper.c 
-BONUS =  ft_lstadd_front.c ft_lstlast.c ft_lstnew.c ft_lstsize.c ft_lstadd_back.c ft_lstdelone.c
+				ft_toupper.c
+BONUS =  ft_lstadd_front.c ft_lstlast.c ft_lstnew.c ft_lstsize.c ft_lstadd_back.c ft_lstdelone.c ft_lstiter.c ft_lstclear.c
 NAME = libft.a
 LIBC = ar -rcs
 OBJS = ${SRCS:.c=.o}

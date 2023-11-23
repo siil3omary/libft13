@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/23 09:15:04 by aelomari          #+#    #+#             */
+/*   Updated: 2023/11/23 09:15:05 by aelomari         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -19,15 +30,12 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 // 		str[i] = ft_toupper(str[i]);
 // 		i++;
 // 	}
-	
 
 // }
 // int main()
 // {
-	
 
 // t_list *head = NULL;
-
 
 // t_list *node1 = (t_list *)malloc(sizeof(t_list));
 // t_list *node2 = (t_list *)malloc(sizeof(t_list));
@@ -48,29 +56,12 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 // node4->content= ft_strdup("Hru");
 // node4->next = NULL;
 
-
-
 // ft_lstiter(head, &zaza);
-
-
-
-
-
-
 
 //     t_list *current = head;
 //     while (current != NULL) {
 //         printf("%s\n", (char *)(current->content));
 //         current = current->next;
 //     }
-
-
-
-
-
-
-
-
-
 
 // }

@@ -28,26 +28,18 @@ static size_t	word_count(const char *str, char c)
 	return (count);
 }
 
-char	**ft_split(char const *s, char c)
+static void	fill_split(char **split, const char *s, char c)
 {
 	size_t	i;
 	size_t	j;
-	char	**split;
 	size_t	wordlen;
 
 	i = 0;
 	j = 0;
-	split = malloc((word_count(s, c) + 1) * sizeof(char *));
-	if (split == NULL)
-	{
-		return (NULL);
-	}
 	while (s[i])
 	{
 		if (s[i] == c)
-		{
 			i++;
-		}
 		else
 		{
 			wordlen = 0;
@@ -60,12 +52,24 @@ char	**ft_split(char const *s, char c)
 		}
 	}
 	split[j] = NULL;
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**split;
+
+	if (!s)
+		return (NULL);
+	split = malloc((word_count(s, c) + 1) * sizeof(char *));
+	if (split == NULL)
+		return (NULL);
+	fill_split(split, s, c);
 	return (split);
 }
 
 // int	main(void)
 // {
-// 	char *s = "*slm**************************************************************************************************************************************************************************************************************************************wa*****************************************cv***waismane*";
+// 	char *s = "*slm*********cv***waismane*";
 // 	char **str = ft_split(s, '*');
 // 	int k = 0;
 // 	int j = 0;

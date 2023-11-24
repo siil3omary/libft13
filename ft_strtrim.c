@@ -11,48 +11,47 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "stdio.h"
+#include <stddef.h>
+#include <stdlib.h>
 
-// char	*iffu(size_t start, size_t end)
-// {
-// 	char	*nostr;
+static int	is_set(const char *s, char c)
+{
+	int	i;
 
-// 	if (start >= end)
-// 	{
-// 		nostr = malloc(1 * sizeof(char));
-// 		if (nostr == NULL)
-// 		{
-// 			return (NULL);
-// 		}
-// 		nostr[0] = '\0';
-// 		return (nostr);
-// 	}
-// 	return (NULL);
-// }
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == c)
+			return (1);
+		i++;
+	}
+	return (0);
+}
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
-	char	*nostr;
 	char	*str;
+	size_t	i;
 
-	start = 0;
-	end = ft_strlen(s1);
-	// nostr = iffu(start, end);
-	// if (nostr != NULL)
-	// {
-	// 	return (nostr);
-	// }
-	while (ft_strchr(set, s1[start]) && start <= end)
-		start++;
-	while (ft_strchr(set, s1[end - 1]) && end > start)
-		end--;
-	str = malloc(end - start + 1);
-	if (!str)
-	{
+	if (s1 == NULL || set == NULL)
 		return (NULL);
+	start = 0;
+	while (s1[start] && is_set(set, s1[start]))
+		start++;
+	end = ft_strlen(s1);
+	while (end > start && is_set(set, s1[end - 1]))
+		end--;
+	str = malloc((end - start + 1) * sizeof(char));
+	if (str == NULL)
+		return (NULL);
+	i = 0;
+	while (start + i < end)
+	{
+		str[i] = s1[start + i];
+		i++;
 	}
-	ft_strlcpy(str, s1 + start, end - start + 1);
+	str[i] = '\0';
 	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 18:15:19 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/23 14:36:15 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/24 11:52:17 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	{
 		j = 0;
 		while (i + j < len && big[i + j] == little[j] && little[j] && big[i
-			+ j])
+				+ j])
 		{
 			j++;
 		}

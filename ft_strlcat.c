@@ -18,9 +18,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	dst_len;
 	size_t	i;
 
-	// if (dst == NULL || src == NULL)
-	// return (0);
-
+if (!size)
+return (ft_strlen(src));
 
 	src_len = ft_strlen(src);
 	dst_len = ft_strlen(dst);
@@ -37,20 +36,20 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 }
 // #include <stdio.h>
 // #include <string.h>
-// #include <bsd/string.h>  // Include the BSD string.h header
+// // #include <bsd/string.h>  // Include the BSD string.h header
 
 // int main() {
-//     char dest[200] = "Hello, jj";
+// //     char dest[200] = NULL;
 //     const char *source = "world!";
 
 //     // Test strlcat function
-//     size_t original_len = strlen(dest);
-//     size_t result = ft_strlcat(dest, source,11);
+// //     size_t original_len = strlen(dest);
+//     size_t result = ft_strlcat(NULL, source,11);
 
-//     printf("Resulting string: %s\n", dest);
-//     printf("Original length: %zu\n", original_len);
-//     printf("Final length: %zu\n", strlen(dest));
-//     printf("strlcat return (value: %zu\n", result));
+// //     printf("Resulting string: %s\n", dest);
+// //     printf("Original length: %zu\n", original_len);
+// //     printf("Final length: %zu\n", strlen(dest));
+//     printf("strlcat return (value: %zu\n", result);
 
 //     return (0);
 // }

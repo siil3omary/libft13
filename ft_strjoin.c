@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 20:17:00 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/24 12:00:47 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/11/24 12:04:07 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@ static char	*ifnull(char const *s1, char const *s2)
 			return (ft_strdup(s1));
 		else if (s2)
 			return (ft_strdup(s2));
-		else
-			return (NULL);
+
 	}
 }
 

@@ -12,15 +12,15 @@
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-	char	*ptr;
+	unsigned char	*data;
 
-	ptr = (char *)malloc(nmemb * size);
-	if (ptr == NULL)
-	{
+	if (size != 0 && count > (18446744073709551615UL / size))
 		return (NULL);
-	}
-	ft_bzero(ptr, nmemb * size);
-	return (ptr);
+	data = malloc(count * size);
+	if (!data)
+		return (NULL);
+	ft_bzero(data, count * size);
+	return (data);
 }

@@ -28,6 +28,20 @@ static size_t	word_count(const char *str, char c)
 	return (count);
 }
 
+static void	*free_all(char **sp)
+{
+	size_t	j;
+
+	j = 0;
+	while (sp[j])
+	{
+		free(sp[j]);
+		j++;
+	}
+	free(sp);
+	return (NULL);
+}
+
 static void	fill_split(char **split, const char *s, char c)
 {
 	size_t	i;
@@ -46,6 +60,8 @@ static void	fill_split(char **split, const char *s, char c)
 			while (s[i + wordlen] && s[i + wordlen] != c)
 				wordlen++;
 			split[j] = malloc(wordlen + 1);
+			if (!split[j])
+				free_all(split);
 			ft_strlcpy(split[j], s + i, wordlen + 1);
 			i += wordlen;
 			j++;
@@ -69,19 +85,14 @@ char	**ft_split(char const *s, char c)
 
 // int	main(void)
 // {
-// 	char *s = "*slm*********cv***waismane*";
-// 	char **str = ft_split(s, '*');
+// 	// char *s = "*slm*********cv***waismane*";
+// 	char **str = ft_split("hello!", ' ');
 // 	int k = 0;
 // 	int j = 0;
 
 // 	while (str[k] != NULL)
 // 	{
-// 		j = 0;
-// 		while (str[k][j])
-// 		{
-// 			printf("%c", str[k][j]);
-// 			j++;
-// 		}
+// 			printf("%s", str[k]);
 // 		printf("\n");
 // 		k++;
 // 	}

@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 15:51:30 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/16 14:07:54 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/12/31 14:09:46 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,17 +83,19 @@ char	**ft_split(char const *s, char c)
 	return (split);
 }
 
-// int	main(void)
+// int main(int argc, char const *argv[])
 // {
-// 	// char *s = "*slm*********cv***waismane*";
-// 	char **str = ft_split("hello!", ' ');
-// 	int k = 0;
-// 	int j = 0;
-
-// 	while (str[k] != NULL)
+// 	if (argc == 3)
 // 	{
-// 			printf("%s", str[k]);
-// 		printf("\n");
-// 		k++;
+// 		int i = 0;
+// 		char **str = ft_split(argv[1] , argv[2][0]);
+// 		while (str[i] != NULL)
+// 		{
+// 			printf("%s\n" , str[i]);
+// 			i++;
+// 		}
+
 // 	}
+
+// 	return (0);
 // }

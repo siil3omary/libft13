@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 22:26:08 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/14 20:19:33 by aelomari         ###   ########.fr       */
+/*   Updated: 2024/01/01 20:22:16 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,3 @@ char	*ft_itoa(int n)
 	}
 	return (rslt);
 }
-// int main(){
-
-// 	printf("%s" , ft_itoa(-123555));
-// }

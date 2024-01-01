@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 02:45:42 by aelomari          #+#    #+#             */
-/*   Updated: 2023/11/04 20:44:30 by aelomari         ###   ########.fr       */
+/*   Updated: 2023/12/30 17:42:12 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,16 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (str[i] == (unsigned char)c)
-			return ((void *)&str[i]);
+			return (&str[i]);
 		i++;
 	}
 	return (NULL);
 }
+// int main(int ac ,char **av)
+// {
+//     if(ac ==4 )
+//     {
+//         printf("%s" ,ft_memchr( av[1] , av[2][0] , ft_atoi(av[3])));
+//     }
+
+// }

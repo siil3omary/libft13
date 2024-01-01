@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 22:56:40 by codespace         #+#    #+#             */
-/*   Updated: 2023/11/16 13:36:52 by aelomari         ###   ########.fr       */
+/*   Updated: 2024/01/01 17:25:31 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	const char	nl = '\n';
+	char	nl;
 
+	nl = '\n';
 	if (s == NULL)
 		return ;
 	write(fd, s, ft_strlen(s));
